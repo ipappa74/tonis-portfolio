@@ -9,7 +9,7 @@ Sivusto esittelee web-kehitystä, käyttöliittymäosaamista, IT-taustaa sekä j
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=111111" alt="JavaScript" />
   <img src="https://img.shields.io/badge/GitHub%20Pages-222222?logo=githubpages&logoColor=white" alt="GitHub Pages" />
   <img src="https://img.shields.io/badge/Responsive-4F8CFF" alt="Responsive" />
-  <img src="https://img.shields.io/badge/Light%20%2F%20Dark-7C3AED" alt="Theme" />
+  <img src="https://img.shields.io/badge/Theme-Light%20%2F%20Dark-7C3AED" alt="Theme" />
 </p>
 
 ## Ominaisuudet
