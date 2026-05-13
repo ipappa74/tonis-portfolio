@@ -3,12 +3,14 @@
 Moderni ja responsiivinen portfolio-sivusto, toteutettu HTML:llä, CSS:llä ja JavaScriptilla.  
 Sivusto esittelee web-kehitystä, käyttöliittymäosaamista, IT-taustaa sekä jatkuvaa oppimista pilvipalvelu-, kyberturvallisuus- ja AI-teemoissa.
 
-![HTML5](https://img.shields.io/badge/HTML5-Structure-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Interactivity-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-222222?style=for-the-badge&logo=githubpages&logoColor=white)
-![Responsive](https://img.shields.io/badge/Responsive-Design-4F8CFF?style=for-the-badge)
-![Theme](https://img.shields.io/badge/Theme-Light%20%2F%20Dark-7C3AED?style=for-the-badge)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=111111" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/GitHub%20Pages-222222?logo=githubpages&logoColor=white" alt="GitHub Pages" />
+  <img src="https://img.shields.io/badge/Responsive-4F8CFF" alt="Responsive" />
+  <img src="https://img.shields.io/badge/Light%20%2F%20Dark-7C3AED" alt="Theme" />
+</p>
 
 ## Ominaisuudet
 
