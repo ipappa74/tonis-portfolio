@@ -1,0 +1,573 @@
+	<head>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	  <title>Toni Sevander | Portfolio</title>
+	  <meta
+		name="description"
+		content="Toni Sevanderin portfolio – web-kehitystä, käyttöliittymiä, IT-osaamista sekä jatkuvaa oppimista pilvipalvelu- ja AI-teemoissa."
+	  />
+	  <meta
+		name="keywords"
+		content="Toni Sevander, portfolio, web-kehitys, frontend, HTML, CSS, JavaScript, IT-tuki, Power Platform, Azure"
+	  />
+	  <meta name="author" content="Toni Sevander" />
+	  <meta name="theme-color" content="#0b1020" />
+	  <meta name="robots" content="index, follow" />
+
+	  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+	  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+	  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+	  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+
+	  <meta property="og:type" content="website" />
+	  <meta property="og:locale" content="fi_FI" />
+	  <meta property="og:site_name" content="Toni Sevander Portfolio" />
+	  <meta property="og:title" content="Toni Sevander | Portfolio" />
+	  <meta
+		property="og:description"
+		content="Web-kehitystä, käyttöliittymiä, IT-osaamista sekä jatkuvaa oppimista pilvipalvelu- AI-teemoissa."
+	  />
+	  <meta
+		property="og:url"
+		content="https://ipappa74.github.io/toni-sevander-portfolio/"
+	  />
+	  <meta
+		property="og:image"
+		content="https://ipappa74.github.io/toni-sevander-portfolio/assets/images/og-image.jpg"
+	  />
+	  <meta property="og:image:width" content="1200" />
+	  <meta property="og:image:height" content="630" />
+	  <meta property="og:image:alt" content="Toni Sevanderin portfolio" />
+
+	  <meta name="twitter:card" content="summary_large_image" />
+	  <meta name="twitter:title" content="Toni Sevander | Portfolio" />
+	  <meta
+		name="twitter:description"
+		content="Web-kehitystä, käyttöliittymiä, IT-osaamista sekä jatkuvaa oppimista pilvipalvelu- ja AI-teemoissa."
+	  />
+	  <meta
+		name="twitter:image"
+		content="https://ipappa74.github.io/toni-sevander-portfolio/assets/images/og-image.jpg"
+	  />
+
+	  <script>
+		document.documentElement.classList.add("js-enabled");
+
+		const savedTheme = localStorage.getItem("theme");
+		const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+		if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
+		  document.documentElement.setAttribute("data-theme", "dark");
+		} else {
+		  document.documentElement.setAttribute("data-theme", "light");
+		}
+	  </script>
+
+	  <link rel="stylesheet" href="style.css" />
+	</head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <header class="site-header" id="header">
+      <nav class="navbar container">
+        <a href="#hero" class="logo">Toni Sevander</a>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#projects">Projektit</a>
+          <a href="#about">Profiili</a>
+          <a href="#experience">Tausta</a>
+          <a href="#education">Koulutus</a>
+          <a href="#stack">Osaaminen</a>
+          <a href="#contact" class="nav-cta">Yhteys</a>
+        </div>
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Vaihda teema"
+          title="Vaihda teema"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko">
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container reveal" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Web-kehittäjä • IT-osaaja • UI-ajattelija</p>
+          <h1>
+            Rakennan selkeitä, moderneja ja käytännöllisiä digitaalisia ratkaisuja.
+          </h1>
+          <p class="hero-text">
+            Olen Toni Sevander, monipuolinen IT- ja web-alan osaaja, jolla on yli
+            30 vuoden kokemus teknisestä työstä, web-suunnittelusta ja
+            ohjaustehtävistä. Viime vuosina olen syventänyt osaamistani erityisesti
+            web-kehityksessä, Microsoft Power Platformissa, pilvipalveluissa,
+            kyberturvallisuudessa ja tekoälyyn liittyvissä aiheissa.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Katso projektit</a>
+            <a
+              href="https://github.com/ipappa74"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/toni-sevander/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card glass">
+            <div class="profile-image-wrap">
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Toni Sevander"
+                class="profile-image"
+              />
+              <div class="image-fallback" aria-hidden="true">
+                <div class="image-fallback-content">
+                  <strong>Toni Sevander</strong>
+                  <span>Lisää profiilikuva: assets/images/profile.jpg</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-card-content">
+              <p class="card-label">Tiivistetysti</p>
+              <h2>Yli 30 vuotta kokemusta käytännön tekemisestä</h2>
+              <p>
+                Taustani yhdistää IT-tuen, web-suunnittelun, käyttöliittymät,
+                asiakasprojektit, ohjaustyön ja uuden osaamisen kehittämisen.
+              </p>
+
+              <div class="mini-stats">
+                <div>
+                  <span>30+</span>
+                  <small>vuotta IT- ja teknistä kokemusta</small>
+                </div>
+                <div>
+                  <span>2023–2026</span>
+                  <small>pilvipalvelu-, kyberturvallisuus- ja AI-opintoja</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Valitut projektit</p>
+          <h2>Projektit</h2>
+          <p>
+            Tässä muutamia projektejani, joissa painottuvat selainpohjaiset työkalut,
+            käyttöliittymät, käytännöllinen toteutus ja toimiva käyttökokemus.
+          </p>
+        </div>
+
+        <div class="projects">
+          <article class="project-card glass">
+            <div class="project-image-wrap">
+              <img
+                src="assets/images/streamlayer.png"
+                alt="StreamLayer-projektin näkymä"
+                class="project-shot"
+              />
+              <div class="image-fallback" aria-hidden="true">
+                <div class="image-fallback-content">
+                  <strong>StreamLayer</strong>
+                  <span>Lisää screenshot: assets/images/streamlayer.png</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-tag">GitHub-projekti</p>
+              <h3>streamlayer</h3>
+              <p>
+                Kevyt monistriimien hallintapaneeli Twitch- ja Kick-ympäristöihin.
+                Projektissa korostuvat responsiivinen käyttöliittymä, automaattinen
+                layout, live-tilan seuranta, suosikit sekä eri palveluihin tehtävät
+                integraatiot. [ipappa74.github.io](https://ipappa74.github.io/streamlayer/)
+              </p>
+              <ul class="tech-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>API-integraatiot</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://ipappa74.github.io/streamlayer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live
+                </a>
+                <a
+                  href="https://github.com/ipappa74/streamlayer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass">
+            <div class="project-image-wrap">
+              <img
+                src="assets/images/kick-multistream.png"
+                alt="Kick Multistream -projektin näkymä"
+                class="project-shot"
+              />
+              <div class="image-fallback" aria-hidden="true">
+                <div class="image-fallback-content">
+                  <strong>Kick Multistream</strong>
+                  <span>Lisää screenshot: assets/images/kick-multistream.png</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-tag">GitHub-projekti</p>
+              <h3>kick-multistream</h3>
+              <p>
+                Selainpohjainen monistriimityökalu Kick-alustalle. Projektissa on
+                useiden striimien katselu samassa näkymässä, slottien järjestely,
+                live-tilan seuranta ja kevyt käyttöliittymä nopeaan käyttöön. [ipappa74.github.io](https://ipappa74.github.io/kick-multistream/)
+              </p>
+              <ul class="tech-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vanilla JS</li>
+                <li>Kick UI</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://ipappa74.github.io/kick-multistream/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live
+                </a>
+                <a
+                  href="https://github.com/ipappa74/kick-multistream"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass">
+            <div class="project-image-wrap">
+              <img
+                src="assets/images/bookmark-manager.png"
+                alt="Bookmark Manager Pro -projektin näkymä"
+                class="project-shot"
+              />
+              <div class="image-fallback" aria-hidden="true">
+                <div class="image-fallback-content">
+                  <strong>Bookmark Manager Pro</strong>
+                  <span>Lisää screenshot: assets/images/bookmark-manager.png</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-tag">GitHub-projekti</p>
+              <h3>bookmark-manager</h3>
+              <p>
+                Selainlaajennus Chromelle ja Edgelle, joka korvaa selaimen
+                oletuskirjanmerkkivalikon laajalla hallintanäkymällä. Mukana ovat
+                esimerkiksi kirjanmerkkipuu, reaaliaikainen haku, drag & drop,
+                duplikaattien etsintä, URL-tarkistus sekä HTML- ja JSON-vienti/tuonti. [github.com](https://github.com/ipappa74/bookmark-manager)
+              </p>
+              <ul class="tech-list">
+                <li>Chrome Extension</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ipappa74/bookmark-manager"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass github-card">
+            <div class="project-image-wrap github-visual">
+              <div class="github-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12.02c0 5.1 3.3 9.42 7.88 10.94.58.1.79-.25.79-.56 0-.28-.01-1.2-.02-2.18-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.24-1.29-5.24-5.72 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .98-.32 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.5 3.19-1.18 3.19-1.18.64 1.58.24 2.75.12 3.04.74.81 1.19 1.84 1.19 3.1 0 4.44-2.7 5.42-5.28 5.71.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.53 11.53 0 0 0 23.5 12.02C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </div>
+              <div class="github-visual-text">
+                <strong>GitHub-profiili</strong>
+                <span>ipappa74 / Toni Sevander</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-tag">Profiili ja jatkuva kehitys</p>
+              <h3>GitHub-profiili</h3>
+              <p>
+                GitHub-profiilini kokoaa yhteen käytännönläheisiä web- ja
+                käyttöliittymäprojekteja. Näkyvissä projekteissa painottuvat
+                selainpohjaiset työkalut, monistriimausratkaisut ja jatkuva
+                käytännön kautta oppiminen. [github.com](https://github.com/ipappa74)
+              </p>
+              <ul class="tech-list">
+                <li>Frontend</li>
+                <li>Käyttöliittymät</li>
+                <li>Työkalut</li>
+                <li>Jatkuva oppiminen</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ipappa74"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub-profiili
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/toni-sevander/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">Profiili</p>
+          <h2>Kuka olen</h2>
+          <p>
+            Kokemusta, käytännön tekemistä ja jatkuvaa osaamisen päivittämistä.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy glass">
+            <p>
+              Olen Toni Sevander, Oulussa toimiva monipuolinen osaaja, jonka
+              tausta yhdistää pitkän käytännön kokemuksen IT-tuesta,
+              web-suunnittelusta, käyttöliittymistä, teknisestä toteutuksesta ja
+              ohjaustyöstä.
+            </p>
+            <p>
+              Olen tehnyt verkkosivustoja, visuaalista suunnittelua, SEO:ta ja
+              asiakasprojekteja sekä työskennellyt rooleissa, joissa korostuvat
+              laiteympäristöt, käyttäjätuki, AD-hallinta, SCCM, käytännön
+              ongelmanratkaisu ja yhteistyö.
+            </p>
+            <p>
+              Viime vuosina olen täydentänyt osaamistani erityisesti Microsoftin
+              ekosysteemissä, Power Platformissa, pilvipalveluissa,
+              kyberturvallisuudessa, Azure-perusteissa, data-analytiikassa ja
+              tekoälyn hyödyntämisessä.
+            </p>
+          </div>
+
+          <div class="about-highlights glass">
+            <div class="highlight">
+              <h3>30+ vuotta kokemusta</h3>
+              <p>Laaja tausta IT:ssä, webissä, teknisessä työssä ja ohjaustehtävissä.</p>
+            </div>
+            <div class="highlight">
+              <h3>Web ja käyttöliittymät</h3>
+              <p>Verkkosivustot, visuaalinen suunnittelu, tekninen toteutus ja SEO.</p>
+            </div>
+            <div class="highlight">
+              <h3>Moderni osaamispäivitys</h3>
+              <p>Power Platform, pilvipalvelut, kyberturvallisuus, Azure, data ja AI.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Tausta</p>
+          <h2>Työkokemuksen päälinjat</h2>
+          <p>
+            Työurani muodostuu web-projekteista, IT-tuesta, ohjaustehtävistä,
+            asiakasyhteistyöstä ja käytännön toteutuksesta eri ympäristöissä.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card glass">
+            <h3>Web Designer / Freelancer / yrittäjyys</h3>
+            <p>
+              Verkkosivustot, käyttöliittymät, visuaalinen suunnittelu, tekninen
+              toteutus, SEO ja asiakasyhteistyö.
+            </p>
+          </article>
+
+          <article class="stack-card glass">
+            <h3>IT-tuki ja projektiasennukset</h3>
+            <p>
+              Työasemien käyttöönotto, laiteasennukset, AD-hallinta,
+              SCCM-sovellukset, ohjelmistojen ylläpito, käyttäjätuki ja teknisten
+              ympäristöjen käytännön hallinta.
+            </p>
+          </article>
+
+          <article class="stack-card glass">
+            <h3>Ohjaus ja valmennus</h3>
+            <p>
+              Opiskelijoiden ja nuorten ohjaus, työturvallisuus,
+              työelämävalmiuksien tukeminen ja käytännön työskentelymallien
+              rakentaminen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="education">
+        <div class="section-heading">
+          <p class="eyebrow">Koulutus ja oppiminen</p>
+          <h2>Koulutus ja jatkuva oppiminen</h2>
+          <p>
+            Pitkä käytännön kokemus yhdistyy jatkuvaan osaamisen kehittämiseen,
+            erityisesti Microsoft-, pilvipalvelu-, kyberturvallisuus- ja AI-teemoissa.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card glass">
+            <h3>Microdegree-kokonaisuudet</h3>
+            <p>
+              Microsoft Power Platform Microdegree (2024) sekä Cloud &
+              Cybersecurity Microdegree (2023–2024), Kajaanin ammattikorkeakoulu.
+            </p>
+          </article>
+
+          <article class="stack-card glass">
+            <h3>AI, Azure ja data</h3>
+            <p>
+              Exploring Artificial Intelligence (2024), Practical AI (2023),
+              Exploring Microsoft Azure (2024–2026) ja Exploring Data and
+              Analytics (2026).
+            </p>
+          </article>
+
+          <article class="stack-card glass">
+            <h3>Vahva käytännön pohja</h3>
+            <p>
+              Taustalla on myös tietojenkäsittelyn ammattitutkinto,
+              WWW- ja multimedia-koulutus sekä teknisen suunnittelun, puualan ja
+              taideteollisuusalan opintoja.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="stack">
+        <div class="section-heading">
+          <p class="eyebrow">Osaaminen</p>
+          <h2>Keskeinen osaaminen</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card glass">
+            <h3>Web ja käyttöliittymät</h3>
+            <p>
+              HTML, CSS, JavaScript, responsiiviset käyttöliittymät,
+              verkkosivustot, visuaalinen suunnittelu, käyttöliittymäajattelu ja SEO.
+            </p>
+          </article>
+
+          <article class="stack-card glass">
+            <h3>IT-tuki ja järjestelmät</h3>
+            <p>
+              AD-hallinta, SCCM, työasemien käyttöönotto, ohjelmistoasennukset,
+              laitetuki, käyttäjien neuvonta ja käytännön IT-ympäristöjen hallinta.
+            </p>
+          </article>
+
+          <article class="stack-card glass">
+            <h3>Pilvi, Power Platform ja AI</h3>
+            <p>
+              Microsoft Power Platform, Azure-perusteet, kyberturvallisuus,
+              data-analytiikka ja tekoälyyn liittyvä osaamisen kehittäminen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" id="contact">
+        <div class="contact-card glass">
+          <p class="eyebrow">Yhteystiedot</p>
+          <h2>Ota yhteyttä</h2>
+          <p>
+            Voit tutustua projekteihini GitHubissa, ottaa yhteyttä LinkedInissä
+            tai lähettää sähköpostia.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:toni.sevander@gmail.com" class="btn btn-primary">
+              Lähetä sähköposti
+            </a>
+            <a
+              href="https://github.com/ipappa74"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/toni-sevander/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© 2026 Toni Sevander. Toteutettu HTML:llä, CSS:llä ja JavaScriptilla.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

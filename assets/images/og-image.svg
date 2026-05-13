@@ -1,0 +1,157 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#121A31"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="180" y1="80" x2="1020" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F8CFF"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <radialGradient id="orb1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(150 110) rotate(40) scale(240 240)">
+      <stop stop-color="#4F8CFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#4F8CFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orb2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(1040 170) rotate(40) scale(240 240)">
+      <stop stop-color="#7C3AED" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blur-xl" x="-100" y="-100" width="1400" height="830" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    </pattern>
+
+    <!-- TS logo gradients -->
+    <linearGradient id="ts-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f8cff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="ts-shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="ts-blur">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#blur-xl)">
+    <circle cx="150" cy="110" r="220" fill="url(#orb1)"/>
+    <circle cx="1040" cy="170" r="220" fill="url(#orb2)"/>
+  </g>
+
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.18"/>
+
+  <rect x="70" y="70" width="1060" height="490" rx="32" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+
+  <text x="110" y="155" fill="#4F8CFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-weight="700"
+        letter-spacing="4">
+    TONI SEVANDER
+  </text>
+
+  <text x="110" y="250" fill="#F5F7FA"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="68"
+        font-weight="700">
+    Portfolio
+  </text>
+
+  <text x="110" y="320" fill="#CBD5E1"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="400">
+    Web-kehitystä, käyttöliittymiä, IT-osaamista
+  </text>
+
+  <text x="110" y="365" fill="#CBD5E1"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="400">
+    sekä jatkuvaa oppimista pilvipalvelu- ja
+  </text>
+
+  <text x="110" y="410" fill="#CBD5E1"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="400">
+    AI-teemoissa.
+  </text>
+
+  <rect x="110" y="455" width="320" height="56" rx="28" fill="url(#accent)" opacity="0.95"/>
+  <text x="150" y="491" fill="#FFFFFF"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-weight="700">
+    github.com/ipappa74
+  </text>
+
+  <!-- Right-side logo card -->
+  <g transform="translate(820 150)">
+    <rect width="250" height="250" rx="34" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)"/>
+
+    <rect
+      x="24"
+      y="24"
+      width="202"
+      height="202"
+      rx="30"
+      fill="url(#ts-grad)"
+      opacity="0.92"
+    />
+
+    <rect
+      x="24"
+      y="24"
+      width="202"
+      height="202"
+      rx="30"
+      fill="#ffffff"
+      opacity="0.10"
+    />
+
+    <ellipse
+      cx="95"
+      cy="70"
+      rx="85"
+      ry="42"
+      fill="url(#ts-shine)"
+    />
+
+    <text
+      x="125"
+      y="132"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Inter, Arial, sans-serif"
+      font-size="92"
+      font-weight="700"
+      letter-spacing="-3"
+      fill="#ffffff"
+    >
+      TS
+    </text>
+  </g>
+
+  <text x="110" y="545" fill="#94A3B8"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="22"
+        font-weight="400">
+    GitHub Pages • HTML • CSS • JavaScript
+  </text>
+</svg>

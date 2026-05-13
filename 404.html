@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Sivua ei löytynyt</title>
+    <meta
+      name="description"
+      content="Hakemaasi sivua ei löytynyt. Palaa takaisin Toni Sevanderin portfolioon."
+    />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#0b1020" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .error-wrap {
+        width: min(100% - 2rem, 760px);
+        margin-inline: auto;
+      }
+
+      .error-card {
+        padding: 3rem;
+        text-align: center;
+      }
+
+      .error-code {
+        font-size: clamp(4rem, 10vw, 7rem);
+        line-height: 1;
+        font-weight: 800;
+        color: var(--accent);
+        margin-bottom: 1rem;
+      }
+
+      .error-card h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        line-height: 1.1;
+        margin-bottom: 1rem;
+      }
+
+      .error-card p {
+        color: var(--muted);
+        max-width: 50ch;
+        margin: 0 auto 2rem;
+      }
+
+      .error-actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 640px) {
+        .error-card {
+          padding: 2rem 1.5rem;
+        }
+
+        .error-actions .btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <main class="error-wrap">
+      <section class="error-card glass">
+        <div class="error-code">404</div>
+        <h1>Sivua ei löytynyt</h1>
+        <p>
+          Hakemaasi sivua ei löytynyt. Osoite voi olla vanhentunut, väärin kirjoitettu
+          tai sisältö on siirretty toiseen paikkaan.
+        </p>
+
+        <div class="error-actions">
+          <a href="./" class="btn btn-primary">Palaa etusivulle</a>
+          <a
+            href="https://github.com/ipappa74"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary"
+          >
+            GitHub-profiili
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
