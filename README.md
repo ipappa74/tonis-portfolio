@@ -25,6 +25,7 @@ portfolio/
 └── assets/
     ├── favicon/
     │   ├── favicon.svg
+	│	├── favicon.ico
     │   ├── favicon-16.png
     │   ├── favicon-32.png
     │   └── apple-touch-icon.png
