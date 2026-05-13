@@ -23,16 +23,16 @@ portfolio/
 ├── script.js
 ├── README.md
 └── assets/
-    ├── favicon/
-    │   ├── favicon.svg
-	│	├── favicon.ico
-    │   ├── favicon-16.png
-    │   ├── favicon-32.png
-    │   └── apple-touch-icon.png
-    └── images/
-        ├── profile.jpg
-        ├── streamlayer.jpg
-        ├── kick-multistream.jpg
-        ├── bookmark-manager.jpg
-        ├── og-image.jpg
+	├── favicon/
+	│   ├── favicon.svg
+	│   ├── favicon.ico
+	│   ├── favicon-16.png
+	│   ├── favicon-32.png
+	│   └── apple-touch-icon.png
+	└── images/
+		├── profile.jpg
+		├── streamlayer.jpg
+		├── kick-multistream.jpg
+		├── bookmark-manager.jpg
+		├── og-image.jpg
 		└── og-image.svg
