@@ -1,4 +1,4 @@
-# Toni Sevander Portfolio
+# Portfolio
 
 Moderni portfolio-sivusto HTML:llä, CSS:llä ja JavaScriptilla.
 
