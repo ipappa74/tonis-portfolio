@@ -446,12 +446,13 @@ select {
 
 .projects {
   display: grid;
-  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -462,13 +463,13 @@ select {
 }
 
 .project-image-wrap {
-  min-height: 320px;
+  min-height: 210px;
   background:
     linear-gradient(135deg, rgba(79, 140, 255, 0.12), rgba(124, 58, 237, 0.08)),
     var(--bg-soft);
   position: relative;
   overflow: hidden;
-  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .project-image-wrap::after {
@@ -486,7 +487,7 @@ select {
 .project-shot {
   width: 100%;
   height: 100%;
-  min-height: 320px;
+  min-height: 210px;
   object-fit: cover;
 }
 
@@ -520,14 +521,14 @@ select {
 }
 
 .project-content {
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .project-content h3 {
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   line-height: 1.15;
   margin-bottom: 1rem;
 }
@@ -537,7 +538,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  margin: 1.5rem 0;
+  margin: 1.15rem 0;
 }
 
 .tech-list li {
@@ -731,14 +732,8 @@ select {
   }
 
   .about-grid,
-  .project-card,
   .stack-grid {
     grid-template-columns: 1fr;
-  }
-
-  .project-image-wrap {
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
   }
 }
 
@@ -811,6 +806,10 @@ select {
 
   .btn {
     width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
 
