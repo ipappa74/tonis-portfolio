@@ -299,7 +299,7 @@ select {
 }
 
 .profile-image-wrap {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
   background:
@@ -311,8 +311,8 @@ select {
 .profile-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center 20%;
   filter: saturate(1.02) contrast(1.02);
 }
 
